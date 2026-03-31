@@ -1,7 +1,7 @@
 import './styles/global.css'
 import './styles/theme.css'
 import { Heading } from './components/Heading'
-import { Container } from './components/container'
+import { Container } from './components/Container'
 import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
@@ -9,7 +9,8 @@ import { CountDown } from './components/CountDown'
 import { Cycles } from './components/Cycles'
 import { DefaultInput } from './components/DefaultInput';
 import { DefaultButton } from './components/DefaultButton';
-import { CirclePlay, CircleStop } from 'lucide-react';
+// import { CirclePlay, CircleStop } from 'lucide-react';
+import { CirclePlay } from 'lucide-react';
 import { Footer } from './components/Footer';
 import { useState } from 'react'
 
@@ -57,7 +58,7 @@ export function App() {
              id='menuInput'
              type='text'
             placeholder='Digite sua Task'
-            labelText={numero} />
+            labelText={numero.toString()} />
           </div>
           <div className='formRow'>
             linha verde
